@@ -1,0 +1,55 @@
+.LandingPage {
+    
+    
+    .Nav{
+        height: 65px;
+        background: white;
+        border-bottom:1px solid #EDEDED ;
+        box-shadow: 0px 1px 20px 0px #ebebeb;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 25px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        .Logo {
+            font-size: 25px;
+            font-weight: 600;
+            color: #041527;
+        }
+
+        .Btns{
+            display: flex;
+
+            button{
+                font-size: 15px;
+                font-weight: 600;
+                padding: 8px 20px;
+                margin-left: 10px;
+                border: none;
+                background: #FF4D00;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover{
+                opacity: 0.85;
+            }
+            button:active{
+                transform: scale(0.9);
+            }
+
+            button:nth-child(1){
+                background: white;
+                color: black;
+                border: 1px solid #EDEDED;
+            }
+
+        }
+    }
+
+
+}

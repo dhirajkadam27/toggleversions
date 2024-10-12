@@ -1,0 +1,37 @@
+.CustomPage {
+  padding: 10px;
+  color: white;
+
+  .newpagebtn{
+    button {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      background: #3b97e3;
+      padding: 10px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .pagename {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #292929;
+    background: #3a3a3a;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    button{
+      
+    cursor: pointer;
+    }
+  }
+  .pagename button:nth-child(1){
+        width: 90%;
+    text-align: left;
+  }
+}
+
+
+

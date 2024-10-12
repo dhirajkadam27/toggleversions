@@ -1,0 +1,598 @@
+.Properties {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  border-left: 1px solid #DBDBDB;
+  transition: right 0.5s ease-in-out;
+  background: white;
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #DBDBDB;
+    height: 45px;
+
+    .topequalbox {
+      width: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .zoom {
+        min-width: 100%;
+        font-weight: 400;
+        color: #3F3F3F;
+        border: none;
+        outline: none;
+
+        button{
+          height: 25px;
+          min-height: unset;
+          div{
+            
+            padding-top: unset;
+            }
+        }
+        label{
+          display: none;
+          
+        }
+        
+        span {
+          color: #3F3F3F;
+        }
+
+        svg {
+          width: 18px;
+          height: 18px;
+          color: #3F3F3F;
+        }
+
+
+        .tap-highlight-transparent {
+          background: white;
+          color: #3F3F3F;
+          border: none;
+          border-radius: 5px;
+          padding: 0px 7px;
+          box-shadow: unset;
+        }
+
+
+        .min-h-10 {
+          min-height: unset;
+        }
+
+        .h-10 {
+          height: 25px;
+        }
+
+
+      }
+
+      .avtar {
+        width: 25px;
+        height: 25px;
+      }
+
+      .ring-offset-background {
+        --tw-ring-offset-color: white;
+      }
+
+      .preview {
+        width: 18px;
+        height: 18px;
+        color: #3F3F3F;
+        stroke-width: 0.5px;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+
+  .section {
+    padding: 10px 10px;
+    width: 100%;
+    border-bottom: 1px solid #DBDBDB;
+
+    .title {
+      font-size: 12px;
+      font-weight: 500;
+      color: #3F3F3F;
+    }
+
+    .dual {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-top: 15px;
+
+      .input {
+        width: 80px;
+        margin-right: 10px;
+
+        .transition-background {
+          background: white;
+          color: #3F3F3F;
+          border: 1px solid #dbdbdb;
+          border-radius: 5px;
+          padding: 0px 7px;
+        }
+
+        input,
+        input::placeholder {
+          color: #3F3F3F;
+        }
+
+        .inputtext {
+          font-size: 12px;
+          color: #dbdbdb;
+        }
+
+
+        .inputicon {
+          font-size: 14px;
+          color: #dbdbdb;
+        }
+
+
+
+        div[data-focus=true] .inputtext {
+          color: #1E88E5;
+        }
+
+        div[data-focus=true] .inputicon {
+          color: #1E88E5;
+        }
+
+        div[data-focus=true].transition-background {
+          border: 1px solid #1E88E5 !important;
+        }
+
+        .min-h-10 {
+          min-height: unset;
+        }
+
+        .h-10 {
+          height: 25px;
+        }
+      }
+
+      .lock {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+
+        svg {
+          color: #dbdbdb;
+          stroke-width: 0.4px;
+        }
+
+      }
+
+      .lock:hover svg {
+        color: #3F3F3F;
+      }
+
+      .lock:active {
+        transform: scale(0.9);
+      }
+
+
+      .select {
+        width: 80px;
+        font-weight: 400;
+        color: #3F3F3F;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+
+        button{
+          height: 25px;
+          min-height: unset;
+          div{
+            
+            padding-top: unset;
+            }
+        }
+        label{
+          display: none;
+          
+        }
+        span {
+          color: #3F3F3F;
+        }
+
+        svg {
+          width: 18px;
+          height: 18px;
+          color: #dbdbdb;
+        }
+
+
+        button[aria-expanded=true] svg {
+          color: #1E88E5;
+        }
+
+
+        .tap-highlight-transparent {
+          background: white;
+          color: #3F3F3F;
+          border: 1px solid #dbdbdb;
+          border-radius: 5px;
+          padding: 0px 7px;
+        }
+
+
+        button[data-open=true].tap-highlight-transparent {
+          border: 1px solid #1E88E5 !important;
+        }
+
+
+        .min-h-10 {
+          min-height: unset;
+        }
+
+        .h-10 {
+          height: 25px;
+        }
+
+      }
+
+      .selectfont {
+        width: 170px;
+      }
+
+    }
+
+
+    button.lock {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+
+
+    button.lock svg {
+      color: #3F3F3F;
+      stroke-width: 0.4px;
+    }
+
+    .parts {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-top: 15px;
+
+      .part1 {
+        width: 100px;
+        display: block;
+
+        .btns {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+
+
+          button {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            border: 1px solid #dbdbdb;
+            margin-right: 5px;
+
+            svg {
+              color: #3F3F3F;
+              stroke-width: 0.4px;
+            }
+          }
+
+          button:active {
+            transform: scale(0.9);
+          }
+        }
+
+
+        .input {
+          width: 80px;
+          margin-top: 10px;
+
+          .transition-background {
+            background: white;
+            color: #3F3F3F;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            padding: 0px 7px;
+          }
+
+          input,
+          input::placeholder {
+            color: #3F3F3F;
+          }
+
+          .inputtext {
+            font-size: 12px;
+            color: #dbdbdb;
+          }
+
+
+          .inputicon {
+            font-size: 14px;
+            color: #dbdbdb;
+          }
+
+
+          div[data-focus=true] .inputtext {
+            color: #1E88E5;
+          }
+
+          div[data-focus=true] .inputicon {
+            color: #1E88E5;
+          }
+
+          div[data-focus=true].transition-background {
+            border: 1px solid #1E88E5 !important;
+          }
+
+
+          .min-h-10 {
+            min-height: unset;
+          }
+
+          .h-10 {
+            height: 25px;
+          }
+        }
+
+
+
+
+      }
+
+
+      .part2 {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #dbdbdb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        margin-left: 5px;
+
+        .box {
+          width: 26px;
+          height: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .blue {
+            width: 7px;
+            height: 7px;
+            background: #DBDBDB;
+            border-radius: 2px;
+            transition: background 0.5s ease-in-out;
+          }
+
+
+        }
+
+        .box:hover .blue {
+          background: #1e88e5;
+        }
+
+      }
+
+
+    }
+
+
+    .triple {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-top: 15px;
+
+      .color {
+        width: 25px;
+        height: 25px;
+        background: #d7a2ff;
+        border-radius: 5px;
+        border: 1px solid white;
+        box-shadow: 0px 0px 1px 1px #3F3F3F;
+      }
+
+      .hex {
+        width: 70px;
+        margin-left: 10px;
+
+        .transition-background {
+          background: white;
+          color: #3F3F3F;
+          border: 1px solid #dbdbdb;
+          border-radius: 5px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          padding: 0px 7px;
+        }
+
+        input,
+        input::placeholder {
+          color: #3F3F3F;
+        }
+
+        .inputtext {
+          font-size: 12px;
+          color: #dbdbdb;
+        }
+
+
+        .inputicon {
+          font-size: 14px;
+          color: #dbdbdb;
+        }
+
+
+
+        div[data-focus=true] .inputtext {
+          color: #1E88E5;
+        }
+
+        div[data-focus=true] .inputicon {
+          color: #1E88E5;
+        }
+
+        div[data-focus=true].transition-background {
+          border: 1px solid #1E88E5 !important;
+        }
+
+
+        .min-h-10 {
+          min-height: unset;
+        }
+
+        .h-10 {
+          height: 25px;
+        }
+      }
+
+
+      .opacity {
+        width: 55px;
+
+        .transition-background {
+          background: white;
+          color: #3F3F3F;
+          border: 1px solid #dbdbdb;
+          border-radius: 5px;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          padding: 0px 7px;
+        }
+
+        input,
+        input::placeholder {
+          color: #3F3F3F;
+        }
+
+        .inputtext {
+          font-size: 12px;
+          color: #dbdbdb;
+        }
+
+
+        .inputicon {
+          font-size: 14px;
+          color: #dbdbdb;
+        }
+
+
+        div[data-focus=true] .inputtext {
+          color: #1E88E5;
+        }
+
+        div[data-focus=true] .inputicon {
+          color: #1E88E5;
+        }
+
+        div[data-focus=true].transition-background {
+          border: 1px solid #1E88E5 !important;
+        }
+
+
+        .min-h-10 {
+          min-height: unset;
+        }
+
+        .h-10 {
+          height: 25px;
+        }
+      }
+
+    }
+
+    .textbtns {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-top: 15px;
+
+      button {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-right: 10px;
+        border: 1px solid #dbdbdb;
+
+        svg {
+          color: #3F3F3F;
+          stroke-width: 0.4px;
+          font-size: 20px;
+        }
+
+      }
+
+      button:active {
+        transform: scale(0.9);
+      }
+    }
+
+
+
+
+
+  }
+
+  .propertiesscroll {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+
+    .px-2.w-full {
+      padding: 0;
+    }
+
+    .py-4 {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .py-2 {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+
+  .propertiesbar {
+    position: absolute;
+    right: 250px;
+    top: calc(50vh - 100px);
+    padding: 20px 10px;
+    cursor: pointer;
+
+    .bar {
+      width: 7px;
+      height: 200px;
+      background: #3F3F3F;
+      border-radius: 10px;
+    }
+
+  }
+}

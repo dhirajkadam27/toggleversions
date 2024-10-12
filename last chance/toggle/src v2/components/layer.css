@@ -1,0 +1,151 @@
+.Layer {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #DBDBDB;
+  transition: left 0.5s ease-in-out;
+  background: white;
+
+  .logo {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d222c;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid #DBDBDB;
+    height: 45px;
+    padding-left: 10px;
+
+    .beta {
+      margin-left: 7px;
+      padding: 3px 10px;
+      font-size: 12px;
+      background: #ffbc00;
+      color: #1d222c;
+      border-radius: 5px;
+  }
+
+
+  .layeroption {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    border: none;
+    margin-left: auto;
+
+    svg {
+      font-size: 20px;
+      color: #3f3f3f;
+      margin-right: 15px;
+  }
+  
+}
+
+
+}
+
+
+  .layertitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: #3F3F3F;
+    padding: 10px 10px;
+    padding-bottom: 5px;
+  }
+
+  .layerlist {
+    width: 100%;
+        height: 450px;
+        overflow-y: auto;
+  }
+
+  .layerlist ul {
+    padding-left: 30px;
+  }
+
+  ul:nth-child(1){
+    padding-left: 10px;
+  }
+  .layerlist ul:first-child{
+    padding-left: unset;
+  }
+
+  .layerlist li {
+    list-style: none;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .layerlist li .element {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+    color: #3F3F3F;
+  }
+  .elementactive{
+    background: #e3f1ff !important;
+  }
+
+  .layerlist li .element:hover {
+    background: #F9F9F9;
+  }
+
+  .layerlist li svg {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+  .pagelist {
+    width: 250px;
+    max-height: 250px;
+    border-top: 1px solid #DBDBDB;
+}
+
+.pagetitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3F3F3F;
+  padding: 10px 10px;
+}
+
+.pagename {
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  font-size: 12px;
+  color: #3F3F3F;
+  cursor: pointer;
+  width: calc(100% - 1px);
+}
+.pagenameactive{
+  background: #e3f1ff !important;
+}
+.pagename:hover {
+  background: #F9F9F9;
+}
+
+
+.layerbar {
+  position: absolute;
+  left: 250px;
+  top: calc(50vh - 100px);
+  padding: 20px 10px;
+  cursor: pointer;
+  z-index: 4;
+
+   .bar {
+    width: 7px;
+    height: 200px;
+    background: #3F3F3F;
+    border-radius: 10px;
+}
+
+}
+}

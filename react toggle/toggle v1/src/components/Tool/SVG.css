@@ -1,0 +1,121 @@
+.ToolTitle {
+    margin: 10px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+.SVGBackgroundTool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+    position: relative;
+}
+.SVGBackgroundTool .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.SVGBackgroundTool .Left:hover{
+    background: #212121;
+}
+.SVGBackgroundTool .Left .Color {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border-radius: 2px;
+    border: 0.5px solid white;
+}
+.SVGBackgroundTool .Left .HexColor {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.SVGBackgroundTool .Left .ColorOpacity {
+    width: 35px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.SVGBackgroundTool .ColorPicker{
+    width: 225px;
+    position: absolute;
+    left: -240px;
+    top: 0;
+}
+.SVGBackgroundTool .Right {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.SVGBackgroundTool .Right:hover{
+    background: #212121;
+}
+.SVGBackgroundTool .Right .material-symbols-outlined{
+    font-size: 20px;
+}
+
+.VersionControlTool .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px;
+    width: fit-content;
+}
+.VersionControlTool .Left:hover{
+    background: #212121;
+}
+
+.VersionControlTool .Left .VersionCode {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.VersionControlTool .Left  .Version {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ToolBorder {
+    width: 100%;
+    border-bottom: 1px solid #2f2f2f;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

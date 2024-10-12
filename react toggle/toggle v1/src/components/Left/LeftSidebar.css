@@ -1,0 +1,14 @@
+.LeftSidebar{
+    width: 250px;
+    height: calc(100vh - 50px);
+    background: #181818;
+    border-right:1px solid #2f2f2f;
+}
+.LeftSidebar .Title{
+    width: calc(100% - 20px);
+    padding: 10px 10px;
+    border-bottom: 1px solid #2f2f2f;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+}

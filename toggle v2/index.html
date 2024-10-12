@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle : Launching Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            color: #3F3F3F;
+        }
+
+        button {
+            font-family: "Inter", sans-serif;
+            cursor: pointer;
+        }
+
+        .heroSection {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img.logo {
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+            display: block;
+        }
+
+        img.bgStripes {
+            position: absolute;
+            z-index: -1;
+            top: 100px;
+            left: 0;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 650px) {
+            img.bgStripes { 
+                top: 300px;
+        }
+        } 
+
+
+        .screens {
+            width: 100%;
+            margin-top: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .websiteScreen {
+            width: 1300px;
+        }
+
+        .mobileScreen {
+            width: 500px;
+        }
+
+        @media only screen and (max-width: 2150px) {
+            .websiteScreen {
+            width: 1100px;
+        }
+        .mobileScreen {
+            width: 450px;
+        }
+        }
+        @media only screen and (max-width: 1750px) {
+            .websiteScreen {
+            width: 900px;
+        }
+        .mobileScreen {
+            width: 300px;
+        }
+        }
+
+        
+        @media only screen and (max-width: 1400px) {
+            .websiteScreen {
+            width: 700px;
+        }
+        .mobileScreen {
+            width: 250px;
+        }
+        }
+
+           
+        @media only screen and (max-width: 1050px) {
+            .websiteScreen {
+            width: 600px;
+        }
+        .mobileScreen {
+            width: 200px;
+        }
+        }
+
+
+        @media only screen and (max-width: 850px) {
+            .websiteScreen {
+            width: 500px;
+        }
+        .mobileScreen {
+            width: 170px;
+        }
+        }
+
+        @media only screen and (max-width: 750px) {
+            .websiteScreen {
+            width: 450px;
+        }
+        .mobileScreen {
+            width: 150px;
+        }
+        }
+
+        @media only screen and (max-width: 650px) {
+            .websiteScreen {
+                display: none;
+        }
+
+        #designwebsiteBox {
+            display: none;
+        }
+        #designwebsiteBoxCursor{
+            display: none;
+        }
+
+        .mobileScreen {
+            width: 250px;
+        }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .websiteScreen {
+                display: none;
+        }
+        #designwebsiteBox {
+            display: none;
+        }
+        #designwebsiteBoxCursor{
+            display: none;
+        }
+
+        .mobileScreen {
+            width: 250px;
+        }
+        }
+
+        @media only screen and (max-width: 340px) {
+            .websiteScreen {
+                display: none;
+        }
+        #designwebsiteBox {
+            display: none;
+        }
+        #designwebsiteBoxCursor{
+            display: none;
+        }
+
+        .mobileScreen {
+            width: 230px;
+        }
+        }
+
+        #designwebsiteBox {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 0;
+            top: 0;
+        }
+        #designwebsiteBoxCursor{
+            position: absolute;
+            width: 20px;
+            z-index: 1;
+            transform: rotate(313deg);
+            left: 0;
+            top: 0;
+        }
+
+        
+        #designmobileBox {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 0;
+            top: 0;
+        }
+        #designmobileBoxCursor{
+            position: absolute;
+            width: 20px;
+            z-index: 1;
+            transform: rotate(313deg);
+            left: 0;
+            top: 0;
+        }
+        
+
+        .grab{
+            width: 30px;
+            position: absolute;
+            bottom: 50vh;
+            left: -400px;
+            z-index: 2;
+        }
+        button.launchingSoon {
+            position: absolute;
+            bottom: 50vh;
+            left: -400px;
+            width: 300px;
+            height: 45px;
+            border: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            background: #3F3F3F;
+            border-radius: 3px;
+        }
+
+        .que {
+            margin: 0px 30px;
+            margin-top: 70px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .ans {
+            margin: 10px 30px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        .follow {
+            margin: 20px 30px;
+            margin-top: 70px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .followButtons {
+            display: flex;
+            align-items: center;
+            margin: 10px 30px;
+            margin-bottom: 50px;
+        }
+
+        .followButtons img {
+            width: 25px;
+            margin-right: 40px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="heroSection" class="heroSection">
+        <img src="./assets/Toggle Logo.svg" alt="Toggle Logo" class="logo">
+        <img src="./assets/stripes.svg" alt="Background Stripes" class="bgStripes">
+        
+        <img src="./assets/cursor.svg" alt="Cursor" id="designwebsiteBoxCursor">
+        <img src="./assets/screenImg.svg" id="designwebsiteBox"/>
+
+        <img src="./assets/cursor.svg" alt="Cursor" id="designmobileBoxCursor">
+        <img src="./assets/screenImg.svg" id="designmobileBox"/>
+
+        <div class="screens">
+            <svg class="websiteScreen" viewBox="0 0 714 384" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.5" y="1.5" width="711" height="381" rx="3.5" fill="white" stroke="#2F2F2F"
+                    stroke-width="3" />
+                <rect x="23" y="20" width="100" height="30" rx="3" fill="#7D7D7D" />
+                <rect x="61" y="225" width="117" height="30" rx="3" fill="#FFC700" />
+                <rect x="411" y="27" width="80" height="15" rx="3" fill="#DCDCDC" />
+                <rect x="61" y="107" width="191" height="15" rx="3" fill="#DCDCDC" />
+                <rect id="websiteImg" x="420" y="91" width="200" height="200" rx="3" fill="white" />
+                <rect x="61" y="135" width="191" height="15" rx="3" fill="#DCDCDC" />
+                <rect x="61" y="163" width="133" height="15" rx="3" fill="#DCDCDC" />
+                <rect x="61" y="191" width="133" height="15" rx="3" fill="#DCDCDC" />
+                <rect x="84" y="238" width="71" height="5" rx="2.5" fill="#3F3F3F" />
+                <rect x="508" y="27" width="80" height="15" rx="3" fill="#DCDCDC" />
+                <rect x="605" y="27" width="80" height="15" rx="3" fill="#DCDCDC" />
+            </svg>
+
+
+            <svg id="mobileScreen" class="mobileScreen" viewBox="0 0 307 584" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.5" y="1.5" width="304" height="581" rx="3.5" fill="white" stroke="#2F2F2F" stroke-width="3"/>
+                <rect x="18" y="24" width="100" height="30" rx="3" fill="#7D7D7D"/>
+                <rect x="255" y="32" width="25" height="15" rx="3" fill="#DCDCDC"/>
+                <rect id="mobileImg" x="43" y="103" width="200" height="200" rx="3" fill="white"/>
+                <rect x="43" y="468" width="117" height="30" rx="3" fill="#FFC700"/>
+                <rect x="43" y="350" width="191" height="15" rx="3" fill="#DCDCDC"/>
+                <rect x="43" y="378" width="191" height="15" rx="3" fill="#DCDCDC"/>
+                <rect x="43" y="406" width="133" height="15" rx="3" fill="#DCDCDC"/>
+                <rect x="43" y="434" width="133" height="15" rx="3" fill="#DCDCDC"/>
+                <rect x="66" y="481" width="71" height="5" rx="2.5" fill="#3F3F3F"/>
+                </svg>
+                
+        </div>
+        <img src="./assets/grab.png" alt="Grab Cusor" class="grab">
+        <button class="launchingSoon">We are Launching Soon</button>
+    </div>
+    <div class="que">What is Toggle?</div>
+    <div class="ans">Toggle is a platform where you can easily build stunning websites and apps with minimal coding.
+        Just design your application, add interactions, and connect to a database. You can use Toggle's default database
+        or your own. It's all about making development easy with some design, a few clicks, and very little code.</div>
+
+    <div class="follow">Follow Us</div>
+    <div class="followButtons">
+        <img src="./assets/Twitter.svg" alt="Twitter" class="social">
+        <img src="./assets/LinkedIn.svg" alt="LinkedIn" class="social">
+        <img src="./assets/Facebook.svg" alt="Facebook" class="social">
+        <img src="./assets/YouTube.svg" alt="YouTube" class="social">
+    </div>
+
+    <script>
+        var websiteImg = document.getElementById('websiteImg').getBoundingClientRect();
+        document.getElementById('designwebsiteBox').style.left = websiteImg.left + window.scrollX+"px";
+        document.getElementById('designwebsiteBox').style.top = websiteImg.top + window.scrollY+"px";
+        document.getElementById('designwebsiteBoxCursor').style.left = websiteImg.left + window.scrollX+"px";
+        document.getElementById('designwebsiteBoxCursor').style.top = websiteImg.top + window.scrollY+"px";
+
+        setTimeout(() => {
+        gsap.to("#designwebsiteBox", { width: websiteImg.width, height:websiteImg.height,duration:1})
+        gsap.to("#designwebsiteBoxCursor", { x: websiteImg.width, y: websiteImg.height,duration:1})
+        }, 1000);
+        setTimeout(() => {
+            gsap.to("#designwebsiteBoxCursor", { x: -5000, y: -5000,duration:10})
+        }, 2100);
+
+        
+        
+        var mobilescreen = document.getElementById('mobileScreen').getBoundingClientRect();
+
+        var mobileImg = document.getElementById('mobileImg').getBoundingClientRect();
+        document.getElementById('designmobileBox').style.left = mobileImg.left + window.scrollX+"px";
+        document.getElementById('designmobileBox').style.top = mobileImg.top + window.scrollY+"px";
+        document.getElementById('designmobileBoxCursor').style.left = mobileImg.left + window.scrollX+"px";
+        document.getElementById('designmobileBoxCursor').style.top = mobileImg.top + window.scrollY+"px";
+
+        console.log(mobilescreen.top+ window.scrollY+mobilescreen.height+100);
+        setTimeout(() => {
+            document.getElementById('heroSection').style.minHeight = mobilescreen.top+ window.scrollY+mobilescreen.height+100+"px";
+        gsap.to("#designmobileBox", { width: mobileImg.width, height:mobileImg.height,duration:1})
+        gsap.to("#designmobileBoxCursor", { x: mobileImg.width, y: mobileImg.height,duration:1})
+        }, 1000);
+        setTimeout(() => {
+            gsap.to("#designmobileBoxCursor", { x: 5000, y: -5000,duration:10})
+        }, 2100);
+
+        setTimeout(() => {
+            gsap.to(".launchingSoon", { top: (mobilescreen.top+ window.scrollY+mobilescreen.height+30), left:(window.innerWidth/2)-150,duration:1})
+            gsap.to(".grab", { top: (mobilescreen.top+ window.scrollY+mobilescreen.height+30), left:(window.innerWidth/2)-50,duration:1})
+        }, 1000);
+        setTimeout(() => {
+            gsap.to(".grab", { bottom: (window.innerHeight+window.innerHeight), left:-5000,duration:10})
+        }, 2100);
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+.Properties_01{
+    width: 250px;
+    height: calc(100vh - 50px);
+    border-left:1px solid #e6e6e6;
+}
+
+.Flexbox_01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Flexbox_01 .Object_name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.Flexbox_01 .Right button {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.Flexbox_01 .Right button:hover {
+    background: rgb(236, 236, 236);
+}
+
+.Flexbox_01 .Right {
+    display: flex;
+    align-items: center;
+}
+
+.Flexbox_01 .Right button span {
+    font-size: 20px;
+}
+
+.Flexbox_02 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2px 10px;
+}
+
+.border {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 3px;
+}
+.border2 {
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 3px;
+}
+
+.border .label {
+    font-size: 12px;
+    width: 23px;
+}
+
+.border input {
+    width: 70%;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+.border2 select {
+    width: 90%;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+.Flexbox_02 button {
+    width: 32px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid grey;
+}
+
+.Flexbox_02 button span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.border span {
+    font-size: 15px;
+}
+.border2 span {
+    font-size: 15px;
+}
+
+.borderline {
+    width: 100%;
+    height: 1px;
+    background: grey;
+}
+
+
+.Fill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+}
+
+.Fill .FillColorBox {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 3px;
+}
+
+.Fill .Right {
+    display: flex;
+    align-items: center;
+}
+
+.Fill .Right button {width: 32px;height: 33px;display: flex;align-items: center;justify-content: center;background: white;border: 1px solid grey;}
+
+.Fill .Right button span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Property_title {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.Fill .FillHex {
+    width: 61px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+.Fill .Left {width: 135px;display: flex;align-items: center;justify-content: start;border: 1px solid grey;padding: 5px;margin: 3px;}
+
+.Fill .FillOpacity {
+    width: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+.StrokeBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+}
+
+.StrokeBox .Left {
+    display: flex;
+    align-items: center;
+}
+
+.StrokeBox .Left select {
+    width: 80px;
+    padding: 7px 0;
+    font-size: 12px;
+    font-weight: 400;
+    outline: none;
+}
+
+.strokewidthbox {
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 3px;
+}
+
+.strokewidthbox span {
+    font-size: 15px;
+}
+
+.strokewidthbox input {
+    width: 70%;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+.StrokeBox .Right button {
+    width: 32px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid grey;
+}
+
+.StrokeBox .Right button span {
+    font-size: 18px;
+    font-weight: 400;
+}

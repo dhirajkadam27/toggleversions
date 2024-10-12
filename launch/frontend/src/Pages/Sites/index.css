@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.Sites{
+    font-family: "Inter", sans-serif;
+    button,input,select{
+        font-family: "Inter", sans-serif;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 30px;
+    }
+    
+    .siteboxs {
+        margin: 30px;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+    
+
+    .createsite {
+        width: calc(85% / 4);
+        min-width: 300px;
+        height: 220px;
+        background: #0d99ff;
+        color: white;
+        border-radius: 10px;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        
+    svg {
+        width: 100%;
+        font-size: 50px;
+        margin-top: 25px;
+    }
+    
+    .text {
+        font-size: 14px;
+        margin-top: -55px;
+        font-weight: bold;
+    }
+    
+    }
+
+    .box {
+            margin: 20px 10px;
+            width: calc(85% / 4);
+            min-width: 300px;
+
+        button {
+            width: 100%;
+            height: 160px;
+            background: #e7e7e7;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: 500;
+            margin: unset;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .Subtitle {
+            font-size: 11px;
+            margin: unset;
+            margin-top: 1px;
+            margin-left: 5px;
+            color: grey;
+        }
+
+    }
+    
+}

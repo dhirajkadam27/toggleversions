@@ -1,0 +1,82 @@
+
+
+.applications {
+.main{
+    .left {
+        width: 250px;
+        border-right: 1px solid #c5c5c5;
+        .workspace_top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10px;
+            height: 40px;
+            border-bottom: 1px solid #c5c5c5;
+            margin-bottom: 5px;
+            
+        
+            .left {
+                width: unset;
+                display: flex;
+                align-items: center;
+                border: none;
+            
+                button {
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: none;
+                    border: none;
+            
+                    span {
+                        font-size: 20px;
+                        color: #b9b9b9;
+                    }
+            
+                }
+            
+                .text {
+                    font-size: 15px;
+                    margin-left: 5px;
+                }
+            
+            }
+            
+            .add {
+                width: 25px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: none;
+                border: none;
+                span {
+                    font-size: 23px;
+                }
+            }
+        
+        
+        }
+
+        
+        .workspaces {
+            display: block;
+            button {
+                display: block;
+                width: 100%;
+                height: 35px;
+                text-align: left;
+                padding: 0px 15px;
+                font-size: 15px;
+                border: none;
+                background: none;
+            }
+        }
+        
+    
+    }
+}
+
+}

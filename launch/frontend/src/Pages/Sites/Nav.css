@@ -1,0 +1,48 @@
+.Sites {
+
+
+    .Nav {
+        height: 55px;
+        background: white;
+        border-bottom: 1px solid #EDEDED;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        .Logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .btns {
+            display: flex;
+            align-items: center;
+
+            button{
+                font-size: 15px;
+                font-weight: 600;
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 100%;
+                width: 35px;
+                height: 35px;
+                background: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+
+
+
+}

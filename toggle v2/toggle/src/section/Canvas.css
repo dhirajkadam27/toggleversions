@@ -1,0 +1,118 @@
+.Canvas {
+    width: calc(100%);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+
+    .Screen {
+        position: absolute;
+        background: white;
+        border: 1px solid black;
+    }
+
+    .Screen:hover,
+    .Container:hover,
+    .Text:hover,
+    .Media:hover {
+        box-shadow: 0 0 0 1px blue;
+    }
+
+    .Selector {
+        z-index: 10;
+
+        .LeftLine {
+            width: 5px;
+            height: 100%;
+            background: transparent;
+            border-left: 1px solid blue;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            cursor: e-resize;
+        }
+
+        .RightLine {
+            width: 5px;
+            height: 100%;
+            background: transparent;
+            border-right: 1px solid blue;
+            position: absolute;
+            right: 0px;
+            top: 0;
+            cursor: e-resize;
+        }
+
+        .TopLine {
+            width: 100%;
+            height: 5px;
+            background: transparent;
+            border-top: 1px solid blue;
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: n-resize;
+        }
+
+        .BottomLine {
+            width: 100%;
+            height: 5px;
+            background: transparent;
+            border-bottom: 1px solid blue;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            cursor: n-resize;
+        }
+
+        .LeftTopBox {
+            width: 10px;
+            height: 10px;
+            border: 1px solid blue;
+            background: white;
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            z-index: 1;
+            cursor: nw-resize;
+        }
+
+        .RightTopBox {
+            width: 10px;
+            height: 10px;
+            border: 1px solid blue;
+            background: white;
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            z-index: 1;
+            cursor: sw-resize;
+        }
+
+        .LeftBottomBox {
+            width: 10px;
+            height: 10px;
+            border: 1px solid blue;
+            background: white;
+            position: absolute;
+            left: -5px;
+            bottom: -5px;
+            z-index: 1;
+            cursor: sw-resize;
+        }
+
+        .RightBottomBox {
+            width: 10px;
+            height: 10px;
+            border: 1px solid blue;
+            background: white;
+            position: absolute;
+            right: -5px;
+            bottom: -5px;
+            z-index: 1;
+            cursor: nw-resize;
+        }
+
+    }
+
+}

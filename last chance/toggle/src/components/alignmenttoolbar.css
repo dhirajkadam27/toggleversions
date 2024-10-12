@@ -1,0 +1,35 @@
+
+.AlignmentToolBar{
+    width: 350px;
+      height: 50px;
+      background: #3F3F3F;
+      position: fixed;
+      top: 20px;
+      z-index: 11;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      transition: left 0.5s ease-in-out;
+  }
+  
+  .AlignmentToolBar svg {
+    color: white;
+    font-size: 33px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .AlignmentToolBar svg.lu{
+    font-size: 30px;
+    stroke-width: 1.2px;
+  }
+  .AlignmentToolBar svg:hover{
+  background: #323232;
+  }
+  .AlignmentToolBar svg:active{
+  transform: scale(0.9);
+  }
+  .AlignmentToolBar .active{
+  background: #1E88E5 !important;
+  }
+  

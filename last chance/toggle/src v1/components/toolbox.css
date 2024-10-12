@@ -1,0 +1,28 @@
+.ToolBox{
+    width: 450px;
+    height: 60px;
+    background: #3F3F3F;
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% - 250px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .ToolBox svg {
+    color: white;
+    font-size: 34px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.ToolBox svg:hover{
+  background: #323232;
+}
+.ToolBox svg:active{
+  transform: scale(0.9);
+}
+.ToolBox .active{
+  background: #1E88E5 !important;
+}

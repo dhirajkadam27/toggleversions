@@ -1,0 +1,57 @@
+.LandingPage {
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    border-top: 1px solid #EDEDED;
+    margin-top: 80px;
+
+    .footerright{
+        display: flex;
+        img {
+            height: 25px;
+            margin-left: 25px;
+        }
+    }
+
+
+    .links {
+        display: flex;
+        align-items: center;
+
+        a {
+            font-size: 15px;
+            margin-left: 45px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .Footer {
+        display: block;
+        padding: 30px 20px;
+
+        .footerright {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                margin-left: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+}
+

@@ -1,0 +1,27 @@
+.TabBtn_01{
+        width: 50px;
+        height: 50px;
+        border: none;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    
+.TabBtn_01 .material-symbols-outlined {
+    color: white;
+    font-size: 25px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+  }
+  .TabBtn_01:hover{
+    background: black;
+  }
+  .TabBtn_01_Active{
+    background: #0D99FF !important;
+  }

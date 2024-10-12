@@ -1,0 +1,64 @@
+.LandingPage {
+
+    .HeroSection1 {
+        .MainLine {
+            font-size: 60px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 100px;
+
+            span {
+                background: -webkit-linear-gradient(286deg, #ff4d00, #ff01eb);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .SubLine {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        button {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px 20px;
+            margin: 10px auto;
+            border: none;
+            background: #FF4D00;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .MainLine {
+                font-size: 50px;
+            }
+
+            .SubLine {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            .MainLine {
+                font-size: 40px;
+            }
+
+            .SubLine {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+
+        }
+
+    }
+}

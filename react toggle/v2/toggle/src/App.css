@@ -1,0 +1,41 @@
+.resizable-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    position: relative; /* Required for absolute positioning of resize boxes */
+}
+
+.resizable-image-container img {
+    max-width: 100%; /* Optional: Prevent image overflow */
+    max-height: 100%; /* Optional: Prevent image overflow */
+}
+
+.resize-box {
+    position: absolute;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    cursor: grab; /* Set cursor style for resizing */
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: Add transparency */
+}
+
+.top-left {
+    top: -10px; /* Adjust offset to position at top-left corner */
+    left: -10px; /* Adjust offset to position at top-left corner */
+}
+
+.top-right {
+    top: -10px; /* Adjust offset to position at top-right corner */
+    right: -10px; /* Adjust offset to position at top-right corner */
+}
+
+.bottom-left {
+    bottom: -10px; /* Adjust offset to position at bottom-left corner */
+    left: -10px; /* Adjust offset to position at bottom-left corner */
+}
+
+.bottom-right {
+    bottom: -10px; /* Adjust offset to position at bottom-right corner */
+    right: -10px; /* Adjust offset to position at bottom-right corner */
+}

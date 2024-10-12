@@ -1,0 +1,27 @@
+.RightSidebar{
+    width: 250px;
+    height: calc(100vh - 50px);
+    background: #181818;
+    border-left:1px solid #2f2f2f;
+}
+.RightSidebar .Tabs{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #2f2f2f;
+    display: flex;
+    align-items: center;
+}
+.RightSidebar .Tabs button{
+    font-family: "Overpass", sans-serif;
+    padding: 0px 10px;
+    height: 100%;
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.RightSidebar .Tabs button.active{
+    color: white;
+}

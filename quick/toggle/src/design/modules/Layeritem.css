@@ -1,0 +1,23 @@
+.custom-layer{
+    color: white;
+    font-size: 14px;
+
+    .highlightfullelement{
+        background: #292929;
+    }
+    .highlightelement{
+        background: #4ab57b;
+    }
+    .highlighthover{
+        background: #009099;
+    }
+    .opacity-0 {
+        opacity: 0;
+    }
+    .innerlayer {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 5px 10px;
+    }
+}

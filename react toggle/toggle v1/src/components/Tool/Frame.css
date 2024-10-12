@@ -1,0 +1,526 @@
+.RectangleCoordinates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+.RectangleCoordinates .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleCoordinates .Left:hover{
+    background: #212121;
+}
+.RectangleCoordinates .Left .Label {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RectangleCoordinates .Left .RectangleX {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.RectangleCoordinates .Middle{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleCoordinates .Middle:hover{
+    background: #212121;
+}
+
+.RectangleCoordinates .Middle .Label {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RectangleCoordinates .Middle .RectangleY {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.RectangleCoordinates .Right {
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+}
+.RectangleSize{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;   
+}
+.RectangleSize .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleSize .Left:hover{
+    background: #212121;
+}
+
+.RectangleSize .Left .Label {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RectangleSize .Left .RectangleW {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.RectangleSize .Middle{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleSize .Middle:hover{
+    background: #212121;
+}
+
+.RectangleSize .Middle .Label {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RectangleSize .Middle .RectangleH {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.RectangleSize .Right {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.RectangleSize .Right:hover{
+    background: #212121;
+}
+.RectangleSize .Right .material-symbols-outlined{
+    font-size: 20px;
+}
+
+
+.RectangleMore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;   
+}
+
+.RectangleMore .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleMore .Left:hover{
+    background: #212121;
+}
+
+.RectangleMore .Left .material-symbols-outlined {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RectangleMore .Left .RectangleA {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.RectangleMore .Middle{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleMore .Middle:hover{
+    background: #212121;
+}
+
+.RectangleMore .Middle .material-symbols-outlined {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RectangleMore .Middle .RectangleR {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.RectangleMore .Right {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.RectangleMore .Right:hover{
+    background: #212121;
+}
+.RectangleMore .Right .material-symbols-outlined{
+    font-size: 20px;
+}
+
+
+.ToolBorder {
+    width: 100%;
+    border-bottom: 1px solid #2f2f2f;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.ToolTitle {
+    margin: 10px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.RectangleFillTool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+    position: relative;
+}
+.RectangleFillTool .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleFillTool .Left:hover{
+    background: #212121;
+}
+.RectangleFillTool .Left .Color {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border-radius: 2px;
+    border: 0.5px solid white;
+}
+.RectangleFillTool .Left .HexColor {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.RectangleFillTool .Left .ColorOpacity {
+    width: 35px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.RectangleFillTool .ColorPicker{
+    width: 225px;
+    position: absolute;
+    left: -240px;
+    top: 0;
+}
+.RectangleFillTool .Right {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.RectangleFillTool .Right:hover{
+    background: #212121;
+}
+.RectangleFillTool .Right .material-symbols-outlined{
+    font-size: 20px;
+}
+
+
+.RectangleStrokeTool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+    position: relative;
+}
+.RectangleStrokeTool .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleStrokeTool .Left:hover{
+    background: #212121;
+}
+.RectangleStrokeTool .Left .Color {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border-radius: 2px;
+    border: 0.5px solid white;
+}
+.RectangleStrokeTool .Left .HexColor {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.RectangleStrokeTool .Left .ColorOpacity {
+    width: 35px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.RectangleStrokeTool .ColorPicker{
+    width: 225px;
+    position: absolute;
+    left: -240px;
+    top: 0;
+}
+.RectangleStrokeTool .Right {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.RectangleStrokeTool .Right:hover{
+    background: #212121;
+}
+.RectangleStrokeTool .Right .material-symbols-outlined{
+    font-size: 20px;
+}
+
+
+
+.RectangleStrokeMore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;   
+}
+
+.RectangleStrokeMore .Left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleStrokeMore .Left:hover{
+    background: #212121;
+}
+.RectangleStrokeMore .Left select {
+    width: 100px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+}
+.RectangleStrokeMore .Left select option{
+    background: #181818;
+
+}
+
+
+.RectangleStrokeMore .Middle{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.RectangleStrokeMore .Middle:hover{
+    background: #212121;
+}
+
+.RectangleStrokeMore .Middle .material-symbols-outlined {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RectangleStrokeMore .Middle .RectangleR {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.RectangleStrokeMore .Right {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.RectangleStrokeMore .Right:hover{
+    background: #212121;
+}
+.RectangleStrokeMore .Right .material-symbols-outlined{
+    font-size: 20px;
+}

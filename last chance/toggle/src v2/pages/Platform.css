@@ -1,0 +1,11 @@
+.Platform{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  background: #F4F4F4;
+
+}
